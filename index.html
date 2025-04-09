@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fun and entertaining baby gender predictor tools based on popular myths and old wives' tales.">
+    <meta name="keywords" content="baby gender predictor, gender reveal, chinese gender chart, pregnancy, baby gender quiz">
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Baby Gender Predictor - Fun Ways to Guess Your Baby's Gender">
+    <meta property="og:description" content="Try our fun baby gender prediction tools based on popular myths and old wives' tales!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://babygenderpredictor.com">
+    <meta property="og:image" content="assets/social-share-image.jpg">
+
+    <title>Baby Gender Predictor - Fun Ways to Guess Your Baby's Gender</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-baby"></i> Baby Gender Predictor</h1>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#chinese-predictor">Chinese Predictor</a></li>
+                <li><a href="#heartbeat-quiz">Heartbeat Quiz</a></li>
+                <li><a href="#wives-tales">Old Wives' Tales</a></li>
+                <li><a href="#reveal-ideas">Reveal Ideas</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Curious About Your Baby's Gender?</h1>
+                <p>Try our fun prediction tools based on popular myths and old wives' tales!</p>
+                <p class="disclaimer-small">For entertainment purposes only. Not medically accurate.</p>
+                <div class="cta-buttons">
+                    <a href="#chinese-predictor" class="btn btn-primary">Chinese Gender Chart</a>
+                    <a href="#heartbeat-quiz" class="btn btn-secondary">Heartbeat Quiz</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Baby Gender Predictor">
+            </div>
+        </div>
+    </section>
+
+    <!-- Chinese Gender Predictor Section -->
+    <section id="chinese-predictor" class="predictor-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-yin-yang"></i> Chinese Gender Predictor</h2>
+                <p>Based on a traditional Chinese gender calendar believed to be over 700 years old!</p>
+            </div>
+            <div class="predictor-content">
+                <div class="predictor-form">
+                    <div class="form-group">
+                        <label for="mother-age">Mother's Age at Conception:</label>
+                        <input type="number" id="mother-age" min="18" max="50" placeholder="Enter age (18-50)">
+                    </div>
+                    <div class="form-group">
+                        <label for="conception-month">Month of Conception:</label>
+                        <select id="conception-month">
+                            <option value="">Select Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                    </div>
+                    <button id="chinese-predict-btn" class="btn btn-primary">Predict Gender</button>
+                </div>
+                <div class="predictor-result" id="chinese-result">
+                    <h3>Your Prediction</h3>
+                    <div class="result-content">
+                        <p>Complete the form to see your prediction!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heartbeat-Based Gender Quiz Section -->
+    <section id="heartbeat-quiz" class="quiz-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-heartbeat"></i> Heartbeat & Symptoms Quiz</h2>
+                <p>Based on the myth that a baby's heart rate and mother's symptoms can predict gender!</p>
+            </div>
+            <div class="quiz-content">
+                <div id="heartbeat-questions" class="quiz-form">
+                    <div class="question">
+                        <h3>Question 1: Baby's Heart Rate</h3>
+                        <p>If you know it, what's your baby's heart rate (BPM)?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="heartrate" value="high"> Above 140 BPM
+                            </label>
+                            <label>
+                                <input type="radio" name="heartrate" value="low"> Below 140 BPM
+                            </label>
+                            <label>
+                                <input type="radio" name="heartrate" value="unknown"> I don't know
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 2: Morning Sickness</h3>
+                        <p>How would you describe your morning sickness?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="sickness" value="severe"> Severe
+                            </label>
+                            <label>
+                                <input type="radio" name="sickness" value="mild"> Mild or None
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 3: Food Cravings</h3>
+                        <p>What are you craving more?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="cravings" value="sweet"> Sweet foods (fruit, chocolate, etc.)
+                            </label>
+                            <label>
+                                <input type="radio" name="cravings" value="salty"> Salty or sour foods
+                            </label>
+                            <label>
+                                <input type="radio" name="cravings" value="both"> Both equally
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 4: Carrying Position</h3>
+                        <p>How are you carrying your baby?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="carrying" value="high"> High (all at the front)
+                            </label>
+                            <label>
+                                <input type="radio" name="carrying" value="low"> Low (all over)
+                            </label>
+                            <label>
+                                <input type="radio" name="carrying" value="unsure"> Not sure/Not showing yet
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 5: Skin Changes</h3>
+                        <p>Has your skin improved or worsened during pregnancy?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="skin" value="better"> Better than before pregnancy
+                            </label>
+                            <label>
+                                <input type="radio" name="skin" value="worse"> Worse than before pregnancy
+                            </label>
+                            <label>
+                                <input type="radio" name="skin" value="same"> No change
+                            </label>
+                        </div>
+                    </div>
+
+                    <button id="heartbeat-quiz-btn" class="btn btn-primary">See Results</button>
+                </div>
+                <div class="quiz-result" id="heartbeat-result">
+                    <h3>Your Results</h3>
+                    <div class="result-content">
+                        <p>Complete all questions to see your prediction!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Womb Position & Old Wives Tales Quiz Section -->
+    <section id="wives-tales" class="quiz-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-scroll"></i> Old Wives' Tales Quiz</h2>
+                <p>Based on centuries of pregnancy folklore and family traditions!</p>
+            </div>
+            <div class="quiz-content">
+                <div id="wives-tales-questions" class="quiz-form">
+                    <div class="question">
+                        <h3>Question 1: Key Test</h3>
+                        <p>If you pick up a key, which end do you naturally grab?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="key" value="round"> The round end
+                            </label>
+                            <label>
+                                <input type="radio" name="key" value="narrow"> The narrow end
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 2: Dream Frequency</h3>
+                        <p>Are you dreaming about one gender more than the other?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="dreams" value="boy"> Dreaming of boys/men
+                            </label>
+                            <label>
+                                <input type="radio" name="dreams" value="girl"> Dreaming of girls/women
+                            </label>
+                            <label>
+                                <input type="radio" name="dreams" value="neither"> No specific gender in dreams
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 3: Mood Changes</h3>
+                        <p>How would you describe your mood during pregnancy?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="mood" value="mellow"> Mellow/Happy
+                            </label>
+                            <label>
+                                <input type="radio" name="mood" value="moody"> Moody/Irritable
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 4: Chinese Birth Chart</h3>
+                        <p>Looking at a traditional Chinese birth chart, what does it say?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="chinese" value="boy"> Boy
+                            </label>
+                            <label>
+                                <input type="radio" name="chinese" value="girl"> Girl
+                            </label>
+                            <label>
+                                <input type="radio" name="chinese" value="unknown"> I don't know
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 5: Wedding Ring Test</h3>
+                        <p>If you dangle your wedding ring over your belly, how does it move?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="ring" value="circles"> In circles
+                            </label>
+                            <label>
+                                <input type="radio" name="ring" value="line"> Back and forth in a line
+                            </label>
+                            <label>
+                                <input type="radio" name="ring" value="notried"> Haven't tried
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <h3>Question 6: Breast Changes</h3>
+                        <p>Have you noticed changes in your breasts?</p>
+                        <div class="options">
+                            <label>
+                                <input type="radio" name="breasts" value="right"> Right breast larger
+                            </label>
+                            <label>
+                                <input type="radio" name="breasts" value="left"> Left breast larger
+                            </label>
+                            <label>
+                                <input type="radio" name="breasts" value="equal"> Equal growth
+                            </label>
+                        </div>
+                    </div>
+
+                    <button id="wives-tales-btn" class="btn btn-primary">See Results</button>
+                </div>
+                <div class="quiz-result" id="wives-tales-result">
+                    <h3>Your Results</h3>
+                    <div class="result-content">
+                        <p>Complete all questions to see your prediction!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gender Reveal Idea Generator Section -->
+    <section id="reveal-ideas" class="reveal-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-gift"></i> Gender Reveal Idea Generator</h2>
+                <p>Click the button for fun and creative gender reveal ideas!</p>
+            </div>
+            <div class="reveal-content">
+                <button id="reveal-generator-btn" class="btn btn-primary">Generate Idea</button>
+                <div class="idea-box" id="reveal-idea">
+                    <p>Click the button to generate a gender reveal idea!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog-section">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-blog"></i> Gender Prediction Blog</h2>
+                <p>Read the latest articles about pregnancy and gender prediction</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1522096823084-2d1aa8411c13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Baby Gender Prediction Methods">
+                    </div>
+                    <div class="blog-content">
+                        <h3>10 Ways to Predict Your Baby's Gender Before the Ultrasound</h3>
+                        <p class="blog-meta">Posted on <span>May 15, 2023</span> by <span>Sarah</span></p>
+                        <p class="blog-excerpt">
+                            Curious about your baby's gender but it's too early for an ultrasound? From the nub theory to the Ramzi method, here are ten popular ways parents try to guess their baby's gender before medical confirmation...
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1607463747681-8c0297f5f039?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gender Reveal Parties">
+                    </div>
+                    <div class="blog-content">
+                        <h3>The History of Gender Reveal Parties: How They Became So Popular</h3>
+                        <p class="blog-meta">Posted on <span>April 22, 2023</span> by <span>Michael</span></p>
+                        <p class="blog-excerpt">
+                            From simple cake cutting to elaborate stunts, gender reveal parties have evolved dramatically. Learn about the origins of this modern tradition and how it grew into a major milestone celebration for expecting parents...
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517697471339-4aa32003c11a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Gender Prediction Accuracy">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Myth vs. Reality: How Accurate Are Traditional Gender Prediction Methods?</h3>
+                        <p class="blog-meta">Posted on <span>March 8, 2023</span> by <span>Jessica</span></p>
+                        <p class="blog-excerpt">
+                            Can old wives' tales really predict your baby's gender? We examine the science (or lack thereof) behind popular gender prediction methods and share stories from parents who tried them...
+                        </p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ad Section -->
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-box">
+                <div class="ad-content">
+                    <h3>Preparing for Your Little One?</h3>
+                    <p>Check out these must-have products for your pregnancy journey!</p>
+                    <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-baby"></i> Baby Gender Predictor</h2>
+                    <p>Fun ways to guess your baby's gender</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#chinese-predictor">Chinese Predictor</a></li>
+                        <li><a href="#heartbeat-quiz">Heartbeat Quiz</a></li>
+                        <li><a href="#wives-tales">Old Wives' Tales</a></li>
+                        <li><a href="#reveal-ideas">Reveal Ideas</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> contact@babygenderpredictor.com</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p><strong>Disclaimer:</strong> This site is for entertainment purposes only. Our gender prediction tools are based on myths and old wives' tales, not medical science. For accurate gender determination, please consult with your healthcare provider.</p>
+                <p>&copy; 2023 Baby Gender Predictor. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

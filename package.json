@@ -1,0 +1,11 @@
+// ... existing code ... (beginning of file)
+  "name": "baby-gender-predictor",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "cp -r *.html *.js *.css assets dist/ || mkdir -p dist && cp -r *.html *.js *.css assets dist/",
+    "lint": "bunx biome lint --write && bunx tsc --noEmit",
+    "format": "bunx biome format --write"
+  },
+// ... existing code ... (rest of file)
